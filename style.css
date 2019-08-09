@@ -1,0 +1,24 @@
+.navbar-brand {
+    font-size: 200%;
+}
+
+.nav-item {
+    font-size: 150%;
+}
+
+#dropdownMenuButton {
+    font-size: 100%;
+}
+
+p {
+    font-size:x-large;
+}
+
+.intro {
+    padding-top:50px;
+}
+
+#list_of_plots {
+    font-size:x-large;
+    margin-left:30px;
+}

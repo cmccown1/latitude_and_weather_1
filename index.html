@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Latitude and Weather</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-info">
+        <div class="d-flex flex-grow-1">
+            <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+            <a class="navbar-brand" href="landing.html">Latitude and Weather</a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbar">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                        </div>
+                    </div>    
+                </li>
+                <li class="nav-item">
+                    <a href="comparison.html" class="nav-link">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a href="data.html" class="nav-link">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="margin-top:30px">
+        <div class="row">
+            <div class = "col-md-12">
+                <h1>The Project</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "col-md-12">
+                <img src="./Resources/assets/images/Fig1.png" class="float-md-right img-fluid" width=700px alt="Max Temperature">
+                <h2 class="intro">
+                    Summary
+                </h2>
+                <p>
+                    In this project, I used the Python numpy library to randomly generate the latitude and longitude of 1,500 locations.
+                    I then used the Python citypy libary to find the nearest city to each location. At this point, I used the Python openweathermapy wrapper
+                    to access the openweatthermap.org api and get then-current weather data for each city. After discarding duplicate cities and cities for which
+                    there was no current weather data, I ended up with 568 data points.
+                </p>
+                <p>
+                    I then used the Python matplotlib library to create a scatterplot for each of four different current weather
+                    attributes available in the data:
+                    <ul id="list_of_plots">
+                        <li>maximum temperature</li>
+                        <li>relative humidity</li>
+                        <li>cloudiness</li>
+                        <li>wind speed</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
