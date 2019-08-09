@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Latitude and Humidity</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-info">
+        <div class="d-flex flex-grow-1">
+            <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+            <a class="navbar-brand" href="landing.html">Latitude</a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbar">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                        </div>
+                    </div>    
+                </li>
+                <li class="nav-item">
+                    <a href="comparison.html" class="nav-link">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a href="data.html" class="nav-link">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="margin-top:30px">
+        <div class="row">
+            <div class = "col-md-12">
+                <h1>Humidity</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "col-md-12">
+                <img src="./Resources/assets/images/Fig2.png" class="float-md-right img-fluid" width=700px alt="Humidity">
+                <h2 class="intro">
+                    Subheading
+                </h2>
+                <p>
+                    Ullamco sint ullamco ad occaecat minim enim amet amet nulla elit dolor. Consequat 
+                    adipisicing cupidatat officia ea mollit sunt tempor deserunt qui adipisicing ex. 
+                    Nulla eu mollit et consectetur commodo. Esse quis occaecat ad voluptate sit tempor 
+                    aliquip sit eiusmod proident elit eiusmod ipsum.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
