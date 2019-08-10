@@ -57,26 +57,21 @@
         <div class="row">
             <div class = "col-md-12">
                 <img src="./Resources/assets/images/Fig1.png" class="float-md-right img-fluid" width=700px alt="Max Temperature">
-
+                
                 <p class ="intro">
-                    If Captain Obvious stated to you over a cocktail that there is a definite relationship between latitude and observed temperature for a given location, 
-                    you would probably agree without hesitation. But how would one prove it?
+                    If your friend, Captain Obvious, stated to you over dinner that there is a definite relationship between latitude and observed temperature for a given location, 
+                    you would probably agree without hesitation. But how would you prove it?
                 </p>
-
                 <h2 class="intro">
                     Summary
                 </h2>
-           
                 <p>
-                    In this project, on July 1, 2019, I used the Python numpy library to randomly generate the latitude and longitude of 1,500 locations.
-                    I then used the Python citypy libary to find the nearest city to each location. Next, I used the Python openweathermapy wrapper
-                    to access the openweatthermap.org api and get then-current weather data for each city. After discarding duplicate cities and cities for which
-                    there was no current weather data, I ended up with 568 data points.
-                </p>
-                <img src="./Resources/assets/images/obvious.png" class="float-md-right img-fluid" height=500px alt="Captain Obvious">
-                <p>
-                    I then used the Python matplotlib library to create a scatterplot for each of four different current weather
-                    attributes available in the data:
+                    To begin this project, I randomly generated the latitude and longitude of 1,500 geographic coordinates using the Python numpy libary.
+                    Next, using the Python citypy libary, I found the nearest city to each geographic coordinate. Finally, using the Python openweathermapy wrapper, I retrieved
+                    then-current weather data—it was July 1, 2019—via the openweatthermap.org api. After discarding duplicate cities and cities for which there was no current weather data, 
+                    I ended up with 568 data points.
+          
+                    Next I created a scatterplot, using the Python matplotlib library, for each of four different weather attributes that I chose from the data:
                     <ul id="list_of_plots">
                         <li><a href="maxtemp.html">maximum temperature</a></li>
                         <li><a href="humidity.html">relative humidity</a></li>
@@ -85,7 +80,7 @@
                     </ul>
                 </p>
                 <p>
-                    The data showed a pronounced relationship between latitude and temperature, but—at least for this one day in July—there did not seem to be a
+                    The data showed the expected pronounced relationship between latitude and temperature, but—at least for this one day in July—there did not seem to be a
                     strong relationship between latitude and the three other weather metrics that I considered. 
                 <p>
                 <p>
